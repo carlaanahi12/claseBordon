@@ -21,10 +21,10 @@ const empleado4 = new Empleado('Matias', 'Gomez', 00017, 12,'si', 350000);
 arrayEmpleados.push(empleado1, empleado2, empleado3, empleado4);
 console.log(arrayEmpleados);
 
-// //CREO UN NUEVO ARRAY DE ANTIGUEDAD POR EMPLEADO
-// // const antiguedadPorEmpleado = [];
-// // antiguedadPorEmpleado.push(empleado1.antiguedad, empleado2.antiguedad, empleado3.antiguedad, empleado4.antiguedad);
-// // console.log(antiguedadPorEmpleado);
+// // //CREO UN NUEVO ARRAY DE ANTIGUEDAD POR EMPLEADO
+// // // const antiguedadPorEmpleado = [];
+// // // antiguedadPorEmpleado.push(empleado1.antiguedad, empleado2.antiguedad, empleado3.antiguedad, empleado4.antiguedad);
+// // // console.log(antiguedadPorEmpleado);
 //CREO UN ARRAY DONDE LOS DATOS DEL EMPLEADO COINCIDAN CON EL APELLIDO INGRESADO
 
 let empleadoApellido = prompt('Ingrese su apellido');
@@ -136,3 +136,30 @@ console.log(descuentoSindicato);
 
 
 // console.log(Date());
+
+
+
+
+
+
+// // // class DescuentosEmpleado {
+// // //     constructor(sueldoBruto, obraSocial, jubilacion, leyObligatoria, sueldoNeto){
+// // //         this.sueldoBruto = sueldoBruto;
+// // //         this.obraSocial = obraSocial;
+// // //         this.jubilacion = jubilacion;
+// // //         this.leyDiezYnueveCeroTreintaYdos = leyObligatoria;
+// // //         this.sindicato = sindicato;
+// // //         this.sueldoNeto = sueldoNeto;
+// // //     }
+// // // }
+
+
+
+// // const arrayDatos = [];
+
+// // const empleado1 = new DescuentosEmpleado(233000, 6990, 25630, 6990, 193390);
+// // const empleado2 = new DescuentosEmpleado(300000, 9000, 33000, 9000, 249000);
+// // const empleado3 = new DescuentosEmpleado(350000, 10500, 38500, 10500, 290500);
+// // const empleado4 = new DescuentosEmpleado(400000, 12000, 44000, 12000, 332000);
+
+// // const antiguedadPorEmpleado = [];
