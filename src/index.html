@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/style/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Tu Portal</p>
+            <nav>
+                <a href="">Nosotros</a>
+                <a href="">Ingresar</a>
+            </nav>
+        </div>
+    </header>
+<section id="hero">
+    <h1>
+        Bienvenido al portal <br>del empleado
+    </h1>
+   
+    <form id="form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email:</label>
+              <input type="email" id="email" aria-describedby="emailHelp" placeholder="Ingrese su email">
+              <small id="emailHelp" class="form-text text-muted"></small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <input type="password" id="contraseña" placeholder="Contraseña">
+            </div>
+            <button type="submit" id="primerClick">Ingresar</button>
+    </form>
+
+</section>
+
+
+
+<section class="segundaSeccion">
+        <div id="calcsueldo">
+          <li class="datosDelEmpleado">Empleado:</li>
+          <li class="datosDelEmpleado">Legajo:</li>
+          <li class="datosDelEmpleado">Sueldo bruto:</li>
+          <li class="datosDelEmpleado">Antiguedad:</li>
+            <h2>Para saber su sueldo neto por favor ingrese su sueldo bruto</h2>
+            <input id="sueldoBruto" type="text" placeholder="ingrese sueldo bruto">
+            <button id="CLICK">Calcular</button>
+            <li class="primerItem">Jubilación (11%)</li>
+            <li>Obra social (3%)</li>
+            <li>Ley 19032 (3%)</li>
+            <li>Sindicato (2%)</li>
+            <p id="resultado">Tu sueldo neto es:</p>
+        </div>
+</section>
+
+<section class="terceraSeccion">
+<div id="calcDiasVacaciones">
+    <h3>Esta calculadora te permitirá calcular cuántos días de vacaciones <br>te corresponden según tu antiguedad. </h3>
+<p>Fecha de ingreso al trabajo:</p>
+<input id="fechaIngreso" type="text" placeholder="ingrese fecha de ingreso">
+<p>Fecha de consulta (actual):</p>
+<input id="FechaActual" type="text" placeholder="ingrese fecha actual">
+<button id="clickVacaciones">Consultar</button>
+<p id="resulVacaciones">Dias de vacaciones:</p>
+</div>
+</section>
+
+<section class="cuartaSeccion">
+    <div id="calcAguinaldo">
+        <h4>Calculadora de sueldo anual complementario y sac proporcional</h4>
+    <p>Ingrese mayor sueldo (neto) del semestre:</p>
+    <input id="sueldoMayor" type="text" placeholder="ingrese sueldo mayor">
+    <p>Ingrese sus meses trabajados desde que ingresó a trabajar</p>
+    <input id="cantMesesTrabajados" type="text" placeholder="ingrese meses trabajados">
+<button id="clickAguinaldo">Calcular</button>
+<p>Su aguinaldo (neto) a cobrar es de:</p>
+    </div>
+
+</section>
+
+
+
+
+
+
+<script src="/src/empleados.js"></script>
+<script src="/src/sueldoneto.js"></script>
+
+</html>
