@@ -1,8 +1,9 @@
-const empleados = 
+const empleados =
+
 [
     {
-        nombre: Noelia,
-        apellido: Albornoz,
+        nombre: 'Noelia',
+        apellido: 'Albornoz',
         legajo: 1000 ,
         antiguedad: 5,
         sindicato: "no" ,
@@ -12,8 +13,8 @@ const empleados =
     },
 
     {
-        nombre: Roberto,
-        apellido: Perez,
+        nombre: 'Roberto',
+        apellido: 'Perez',
         legajo: 1001,
         antiguedad: 7,
         sindicato: "no" ,
@@ -23,8 +24,8 @@ const empleados =
     },
 
     {
-        nombre: Anabela,
-        apellido: Martinez,
+        nombre: 'Anabela',
+        apellido: 'Martinez',
         legajo: 1002,
         antiguedad: 25,
         sindicato: "si" ,
@@ -34,8 +35,8 @@ const empleados =
     },
 
     {
-        nombre: Matias,
-        apellido: Gomez,
+        nombre: 'Matias',
+        apellido: 'Gomez',
         legajo: 1003,
         antiguedad: 12,
         sindicato: "si" ,
@@ -45,3 +46,6 @@ const empleados =
     },
 
 ];
+
+export {empleados};
+

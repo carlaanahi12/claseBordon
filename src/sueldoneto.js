@@ -1,32 +1,97 @@
+import { empleados } from "./empleados.js";
 
 
 const formularioIngreso = document.getElementById('form');
 
 const inputEmail = document.getElementById('email');
-const inputContraseña = document.getElementById('contraseña');
-const botonIngresar = document.getElementById('primerClick');
-const datosDelEmpleado = document.getElementsByClassName('datosDelEmpleado');
+const inputContrasenia = document.getElementById('contraseña');
+
+// const botonIngresar = document.getElementById('primerClick');
 
 
-const guardarListaEmpleados = (clave, valor) => {localStorage.setItem(clave, valor)};
-
-guardarListaEmpleados("listaEmpleados", JSON.stringify(empleados));
-
-
-
-
+const apellido = document.getElementsByClassName('apellido');
+const legajo = document.getElementsByClassName('legajo');
+const sueldoBruto = document.getElementsByClassName('sueldoBruto');
+const antiguedad = document.getElementsByClassName('antiguedad');
 
 
 
-// formularioIngreso.addEventListener('submit', (e)=> {
-// empleados.forEach((email) => {
-// if(empleados.email === inputEmail){
-//     console.log(empleados.inputEmail.value)
+
+
+
+// empleados.forEach((empleado) => {
+
+// })
+
+
+
+
+
+//ALMACENO EL ARRAY DE OBJETOS EN LOCAL STORAGE
+//Lo convierto a json
+const enJSON = JSON.stringify(empleados);
+
+//Guardo el array de objetos en formato json
+localStorage.setItem("empleados", enJSON);
+// console.log(enJSON);
+
+
+//Obtengo el valor del array almacenado en el storage
+const listaEmpleados = JSON.parse(localStorage.getItem('empleados'));
+// console.log(listaEmpleados);
+
+
+
+
+// botonIngresar.addEventListener('click', clickIngreso);
+
+// function clickIngreso(){
+//     listaEmpleados.forEach((empleado)=> {
+//         if ((inputEmail === empleado.email.value) && (inputContrasenia === empleado.contrasenia.value)){
+
+//             mostrarDatosEmpleado();
+//             }
+
+//         })
+
 // }
 
 
-// })
-// })
+
+
+
+
+//EVENTO SUBMIT
+
+formularioIngreso.addEventListener('submit', (event)=> {
+event.preventDefault();
+    listaEmpleados.forEach((empleado)=> {
+        if ((inputEmail.value === empleado.email) && (inputContrasenia.value === empleado.contrasenia)){
+
+            mostrarDatosEmpleado();
+            }
+
+        })
+
+
+
+
+})
+
+
+
+const mostrarDatosEmpleado = () => {
+    apellido.innerText = apellido.value;
+    legajo.innerText = legajo.value;
+    sueldoBruto.innerText = sueldoBruto.value;
+    antiguedad.innerText = antiguedad.value;
+
+
+
+}
+
+
+
 
 
 
@@ -93,11 +158,6 @@ guardarListaEmpleados("listaEmpleados", JSON.stringify(empleados));
 // }
 
 
-// // botonCalcular.onkeydown = () =>{
-// //     respuestaClick();
-// //     actualizar();
-
-// // }
 
 
 // const actualizar = () => {
