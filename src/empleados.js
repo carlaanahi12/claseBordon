@@ -9,7 +9,7 @@ const empleados =
         sindicato: "no" ,
         sueldoBruto: 233000,
         email: "noeliaalbornoz@gmail.com",
-        contraseña: 1234567,
+        contrasenia: 1234567,
     },
 
     {
@@ -20,7 +20,7 @@ const empleados =
         sindicato: "no" ,
         sueldoBruto: 300000,
         email: "robertoperez@gmail.com",
-        contraseña: 2224445,
+        contrasenia: 2224445,
     },
 
     {
@@ -31,7 +31,7 @@ const empleados =
         sindicato: "si" ,
         sueldoBruto: 400000,
         email: "anabelamartinez@gmail.com",
-        contraseña: 3334567,
+        contrasenia: 3334567,
     },
 
     {
@@ -42,7 +42,7 @@ const empleados =
         sindicato: "si" ,
         sueldoBruto: 350000,
         email: "matiasgomez@gmail.com",
-        contraseña: 6666897
+        contrasenia: 6666897
     },
 
 ];
